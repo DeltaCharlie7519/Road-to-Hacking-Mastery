@@ -14,7 +14,6 @@ def get_args():
     return options
 
 Newmac_add = get_args()
-mac_changer(Newmac_add)
 ifconfig_result = subprocess.check_output("ifconfig" , Newmac_add.new_mac)
 print(ifconfig_result)
 
